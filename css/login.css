@@ -85,7 +85,7 @@ input:focus{
 .options{
 display: flex;
 align-items: center;
-justify-content: : space-between;
+justify-content: space-between;
 margin-bottom:1.5rem;
 
 }
@@ -136,17 +136,17 @@ button:active {
 }
 
 .divider{
- display: flex
+ display: flex;
  align-items: center;
- margin:1.5rem;
+ margin: 1.5rem;
 }
 
 .divider::before,
-.divider:: ::after{
+.divider::after{
 content: '';
 flex: 1;
 height: 1px;
-background-color: rgba(255, 255, 255, 0.1));
+background-color: rgba(255, 255, 255, 0.1);
 
 }
 .divider span{
@@ -165,6 +165,8 @@ margin-bottom: 1.5rem;
 }
 
 .social-btn{
+color: var(--text-primary);
+text-decoration: none;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -182,15 +184,18 @@ transform: translateY(-5px);
 
 }
 
-.stingup-link{
+.singup-link{
     text-align: center;
     margin-top: 1.5rem;
     color: var(--text-secundary);
     font-size: 0.9rem;
 }
-.stingup-link a {
+.singup-link a {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition);
+}
+.singup-link a:hover{
+    text-decoration: underline;
 }
